@@ -1,0 +1,99 @@
+body {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+body > img {
+    position: fixed;
+    top: 0; left: 0; right: 0; /* bottom: 0; */
+    z-index: -1;
+}
+
+/* ---------- 로그인 ---------- */
+.hidden {display: none;}
+
+#greeting {
+    padding: 25px 0 0 25px;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* ---------- 시계 ---------- */
+#clock {
+    position: absolute;
+    top: 33%; left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 85px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    font-weight: bolder;
+}
+
+/* ---------- 명언 ---------- */
+#quote {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translateX(-50%);
+    
+    white-space: nowrap;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 1px 2px black;
+}
+
+/* ---------- 날씨 ---------- */
+#weather {
+    position: absolute;
+    top: 15px; right: 20px;
+}
+
+#weather > span:first-child {font-weight: bold; margin-right: 5px;}
+
+/* ---------- ToDo리스트 ---------- */
+#todo {
+    position: absolute;
+    bottom: 10px; right: 30px;
+
+    width: 300px;
+}
+
+#todo-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+#todo-form > input[placeholder~="Enter"] {
+    background: none;
+    border: none;
+    outline: none;
+    
+    width: 90%;
+    padding: 10px 0px 5px 17px;
+    color: black;
+}
+
+#todo-list {
+    color: white;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+#todo-list > li {line-height: 22px;}
+#todo-list > li::after {content: ""; display: block; clear: both;}
+
+#todo-list > li > span:hover {
+    text-decoration: underline; 
+    cursor: default;
+}
+#todo-list > li > button {
+    float: left;
+    padding: 0 10px 0 20px;
+    color: red;
+    cursor: pointer;
+    line-height: 22px;
+    
+    border: none;
+    background: none;
+    outline: none;
+}

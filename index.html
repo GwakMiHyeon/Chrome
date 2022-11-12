@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>바닐라 JS로 크롬 앱 만들기</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/JavaScript" defer src="js/greetings.js"></script>
+    <script type="text/JavaScript" defer src="js/clock.js"></script>
+    <script type="text/JavaScript" defer src="js/quotes.js"></script>
+    <script type="text/JavaScript" defer src="js/background.js"></script>
+    <script type="text/JavaScript" defer src="js/todo.js"></script>
+    <script type="text/JavaScript" defer src="js/weather.js"></script>
+    <!-- defer : head안에 존재하지만 가장 나중에 읽을 수 있도록 도와줌 -->
+</head>
+<body>
+    <form id="login-form" class="hidden">
+        <input required maxlength="15" type="text" placeholder="What is your name?">
+        <button>Log In</button>
+    </form>
+
+    <h1 id="greeting" class="hidden"></h1>
+    
+    <h2 id="clock">00:00</h2>
+    
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div id="todo">
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To Do and Press Enter" required />
+            <!-- required : todo리스트를 빈칸으로 작성하면 저장되지 않게해줌 -->
+        </form>
+        
+        <ul id="todo-list"></ul>
+    </div>
+
+</body>
